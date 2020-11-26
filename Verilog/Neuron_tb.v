@@ -160,7 +160,7 @@ initial begin
 	Input_valid = 1'b1;
    #(10*fullclock);
    Input_valid = 1'b0;
-   #(15*fullclock);
+   #(20*fullclock);
    true_out = {{7{Wgt_0[17]}}, Wgt_0} * Pix_0 + {{7{Wgt_1[17]}}, Wgt_1} * Pix_1 + {{7{Wgt_2[17]}}, Wgt_2} * Pix_2 + {{7{Wgt_3[17]}}, Wgt_3} * Pix_3 + {{7{Wgt_4[17]}}, Wgt_4} * Pix_4 + {{7{Wgt_5[17]}}, Wgt_5} * Pix_5 + {{7{Wgt_6[17]}}, Wgt_6} * Pix_6 + {{7{Wgt_7[17]}}, Wgt_7} * Pix_7 + {{7{Wgt_8[17]}}, Wgt_8} * Pix_8 + {{7{Wgt_9[17]}}, Wgt_9} * Pix_9 + {{7{Wgt_10[17]}}, Wgt_10} * Pix_10 + {{7{Wgt_11[17]}}, Wgt_11} * Pix_11 + {{7{Wgt_12[17]}}, Wgt_12} * Pix_12 + {{7{Wgt_13[17]}}, Wgt_13} * Pix_13 + {{7{Wgt_14[17]}}, Wgt_14} * Pix_14 + {{7{Wgt_15[17]}}, Wgt_15} * Pix_15;
    if ( true_out == Out)
 		$display("Matched 1!!");
@@ -202,7 +202,7 @@ initial begin
    Input_valid = 1'b1;
    #(10*fullclock);
    Input_valid = 1'b0;
-   #(15*fullclock);
+   #(18*fullclock);
    true_out = {{7{Wgt_0[17]}}, Wgt_0} * Pix_0 + {{7{Wgt_1[17]}}, Wgt_1} * Pix_1 + {{7{Wgt_2[17]}}, Wgt_2} * Pix_2 + {{7{Wgt_3[17]}}, Wgt_3} * Pix_3 + {{7{Wgt_4[17]}}, Wgt_4} * Pix_4 + {{7{Wgt_5[17]}}, Wgt_5} * Pix_5 + {{7{Wgt_6[17]}}, Wgt_6} * Pix_6 + {{7{Wgt_7[17]}}, Wgt_7} * Pix_7 + {{7{Wgt_8[17]}}, Wgt_8} * Pix_8 + {{7{Wgt_9[17]}}, Wgt_9} * Pix_9 + {{7{Wgt_10[17]}}, Wgt_10} * Pix_10 + {{7{Wgt_11[17]}}, Wgt_11} * Pix_11 + {{7{Wgt_12[17]}}, Wgt_12} * Pix_12 + {{7{Wgt_13[17]}}, Wgt_13} * Pix_13 + {{7{Wgt_14[17]}}, Wgt_14} * Pix_14 + {{7{Wgt_15[17]}}, Wgt_15} * Pix_15;
    if ( true_out == Out)
 		$display("Matched 1!!");

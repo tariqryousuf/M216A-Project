@@ -1,16 +1,22 @@
-module accumulator (clk, GlobalReset, increment, Out);
+module accumulator (clk, sample, GlobalReset, increment, Out);
 	input clk;
+	input sample;
 	input GlobalReset;
 	input [25:0] increment;
-	output reg [25:0] Out; 
+	output [25:0] Out; 
 	
-	always @ (posedge clk or posedge GlobalReset) begin
+	reg [25:0] prev_out;
+	
+	FixedPointAdder acc(.clk(clk), .GlobalReset(GlobalReset), .Port2(prev_out), .Port1(increment), .Output_syn(Out));
+	
+	always @ (posedge sample or posedge GlobalReset) begin
 		if (GlobalReset) begin
-			Out <= 25'b0;
+			prev_out <= 25'b0;
 		end
 		else begin
-			Out <= Out + increment;
+			prev_out <= Out;
 		end
 	end
+	
 endmodule
 		

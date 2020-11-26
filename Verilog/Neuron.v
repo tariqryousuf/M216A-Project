@@ -1,8 +1,3 @@
-//time sclae for simulation perposes
-`timescale 1 ns/10 ps
-
-
-
 module Neuron (
 	input clk,
 	input GlobalReset,
@@ -10,7 +5,7 @@ module Neuron (
 	input [18:0]  Wgt_0, Wgt_1, Wgt_2, Wgt_3, Wgt_4, Wgt_5, Wgt_6, Wgt_7, Wgt_8, Wgt_9, Wgt_10, Wgt_11, Wgt_12, Wgt_13, Wgt_14, Wgt_15, Wgt_16, Wgt_17, Wgt_18, Wgt_19, Wgt_20, Wgt_21, Wgt_22, Wgt_23, Wgt_24, Wgt_25, Wgt_26, Wgt_27, Wgt_28, Wgt_29, Wgt_30, Wgt_31, Wgt_32, Wgt_33, Wgt_34, Wgt_35, Wgt_36, Wgt_37, Wgt_38, Wgt_39, Wgt_40, Wgt_41, Wgt_42, Wgt_43, Wgt_44, Wgt_45, Wgt_46, Wgt_47, Wgt_48, Wgt_49, Wgt_50, Wgt_51, Wgt_52, Wgt_53, Wgt_54, Wgt_55, Wgt_56, Wgt_57, Wgt_58, Wgt_59, Wgt_60, Wgt_61, Wgt_62, Wgt_63,
 	input [9:0]  Pix_0, Pix_1, Pix_2, Pix_3, Pix_4, Pix_5, Pix_6, Pix_7, Pix_8, Pix_9, Pix_10, Pix_11, Pix_12, Pix_13, Pix_14, Pix_15, Pix_16, Pix_17, Pix_18, Pix_19, Pix_20, Pix_21, Pix_22, Pix_23, Pix_24, Pix_25, Pix_26, Pix_27, Pix_28, Pix_29, Pix_30, Pix_31, Pix_32, Pix_33, Pix_34, Pix_35, Pix_36, Pix_37, Pix_38, Pix_39, Pix_40, Pix_41, Pix_42, Pix_43, Pix_44, Pix_45, Pix_46, Pix_47, Pix_48, Pix_49, Pix_50, Pix_51, Pix_52, Pix_53, Pix_54, Pix_55, Pix_56, Pix_57, Pix_58, Pix_59, Pix_60, Pix_61, Pix_62, Pix_63,
 	output [25:0] Out,
-	output Output_valid
+	output reg Output_valid
 );
 
 // FixedPointMultiplier I/0
@@ -20,7 +15,8 @@ wire [25:0] M0, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15
 
 // For Timing
 wire last_input;
-wire Inc_output_valid;
+reg Inc_output_valid;
+wire turn_off_output_valid;
 parameter halfclock=1;
 parameter fullclock=2*halfclock;
 
@@ -49,15 +45,22 @@ FixedPointMultiplier Mult_15(.clk(clk), .GlobalReset(GlobalReset), .WeightPort(M
 
 // Counting Clock Cycles
 wire [3:0] mod_15_cntr; 
-mod_N_counter #(15, 4) m0(.clk(clk | Inc_output_valid), .GlobalReset(GlobalReset | Input_valid), .out(mod_15_cntr));
-wire next_set = (mod_15_cntr == 4'b1110);    
-//wire next_set = (mod_7_cntr == 3'b110);    
+mod_N_counter #(15, 4) m0(.clk(clk | turn_off_output_valid), .GlobalReset(GlobalReset | Input_valid), .out(mod_15_cntr));
+wire next_set = (mod_15_cntr == 4'b1110);       
 wire [1:0] mod_4_counter;
 mod_N_counter #(4, 2) m1(.clk(next_set | last_input), .GlobalReset(GlobalReset | Input_valid), .out(mod_4_counter));
 
 // Turning off Multipliers/Adders when finished
 assign last_input = (mod_4_counter == 2'b11);
-assign Inc_output_valid = (mod_4_counter == 2'b11) & (mod_15_cntr == 4'b1101);
+
+assign turn_off_output_valid = (mod_4_counter == 2'b11) & (mod_15_cntr == 4'b1101);
+always @ (posedge clk) begin
+    if (turn_off_output_valid)
+       Inc_output_valid <= 1'b1;
+    else
+       Inc_output_valid <= 1'b0;
+end
+
 
 // Timing the inputs 
 always @ (*) begin
@@ -227,11 +230,32 @@ FixedPointAdder Add_14(.clk(clk), .GlobalReset(GlobalReset), .Port2(Add_12_out),
 
 // Adding current set to previous sets
 wire sample;
-assign #halfclock sample = (next_set | Inc_output_valid);
-accumulator a0(.clk(sample), .GlobalReset(GlobalReset | Input_valid), .increment(adder_out), .Out(Out));
+assign sample = (next_set | Inc_output_valid);
+reg sample_1;
+reg sample_2;
+reg sample_3;
+reg sample_4;
+reg sample_end;
+always @ (negedge clk) begin
+    sample_1 <= sample;  
+    sample_3 <= sample_2;
+    sample_end <= sample_4  & (~clk);   
+end
+always @ (posedge clk) begin
+    sample_2 <= sample_1;
+    sample_4 <= sample_3;
+end
+   
+    
+accumulator a0(.clk(((sample_2 & ~clk) | (sample_end  & clk))), .sample(sample), .GlobalReset(GlobalReset | Input_valid), .increment(adder_out), .Out(Out));
 
 // Final Output
-assign #fullclock Output_valid = Inc_output_valid;
+always @ (posedge clk) begin
+    if(Inc_output_valid & sample_end)
+       Output_valid <= 1'b1;
+    else
+       Output_valid <= 1'b0;
+end
 
 
 endmodule
