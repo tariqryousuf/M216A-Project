@@ -45,21 +45,38 @@ FixedPointMultiplier Mult_15(.clk(clk), .GlobalReset(GlobalReset), .WeightPort(M
 
 // Counting Clock Cycles
 wire [3:0] mod_15_cntr; 
-mod_N_counter #(15, 4) m0(.clk(clk | turn_off_output_valid), .GlobalReset(GlobalReset | Input_valid), .out(mod_15_cntr));
+mod_N_counter #(15, 4) m0(.clk(clk), .GlobalReset(GlobalReset | Input_valid), .out(mod_15_cntr));
 wire next_set = (mod_15_cntr == 4'b1110);       
 wire [1:0] mod_4_counter;
-mod_N_counter #(4, 2) m1(.clk(next_set | last_input), .GlobalReset(GlobalReset | Input_valid), .out(mod_4_counter));
+mod_N_counter #(4, 2) m1(.clk(next_set), .GlobalReset(GlobalReset | Input_valid), .out(mod_4_counter));
 
 // Turning off Multipliers/Adders when finished
 assign last_input = (mod_4_counter == 2'b11);
 
 assign turn_off_output_valid = (mod_4_counter == 2'b11) & (mod_15_cntr == 4'b1101);
-always @ (posedge clk) begin
-    if (turn_off_output_valid)
-       Inc_output_valid <= 1'b1;
-    else
-       Inc_output_valid <= 1'b0;
+
+
+// FSM to control scheduling\
+// State = 0  <- Neuron Processing input
+// State = 1  <- Neuron Awaiting next input
+reg state, next_state;
+always @ (*) begin
+    if (state == 1'b0)
+       next_state = (turn_off_output_valid == 1) ? 1'b1 : 1'b0;
+     else if (state == 1'b1)
+        next_state = ((GlobalReset | Input_valid) == 1) ? 1'b0 : 1'b1;
+     else 
+        next_state = 1'b0;
 end
+
+wire state_reset = (GlobalReset | Input_valid);
+always @ (posedge clk or posedge state_reset)  begin
+    if (state_reset)
+       state <= 1'b0;
+    else
+       state <= next_state;
+end
+
 
 
 // Timing the inputs 
@@ -230,28 +247,13 @@ FixedPointAdder Add_14(.clk(clk), .GlobalReset(GlobalReset), .Port2(Add_12_out),
 
 // Adding current set to previous sets
 wire sample;
-assign sample = (next_set | Inc_output_valid);
-reg sample_1;
-reg sample_2;
-reg sample_3;
-reg sample_4;
-reg sample_end;
-always @ (negedge clk) begin
-    sample_1 <= sample;  
-    sample_3 <= sample_2;
-    sample_end <= sample_4  & (~clk);   
-end
-always @ (posedge clk) begin
-    sample_2 <= sample_1;
-    sample_4 <= sample_3;
-end
-   
+assign sample = (next_set | state);  
     
-accumulator a0(.clk(((sample_2 & ~clk) | (sample_end  & clk))), .sample(sample), .GlobalReset(GlobalReset | Input_valid), .increment(adder_out), .Out(Out));
+accumulator a0(.clk(sample), .GlobalReset(GlobalReset | Input_valid), .increment(adder_out), .Out(Out));
 
 // Final Output
 always @ (posedge clk) begin
-    if(Inc_output_valid & sample_end)
+    if(state)
        Output_valid <= 1'b1;
     else
        Output_valid <= 1'b0;
