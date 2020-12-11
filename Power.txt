@@ -1,0 +1,417 @@
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Wed Dec  9 18:29:36 2020
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Image_Classifier       540000            saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_0
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_1
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_2
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_3
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_4
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_5
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_6
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_7
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_8
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_9
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_10
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_11
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_12
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_13
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_14
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_15
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_16
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_17
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_18
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_19
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_20
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_21
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_22
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_23
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_24
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_25
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_26
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_27
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_28
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_add_29
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_inc_0
+                       ForQA             saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_0
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_1
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_2
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_3
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_4
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_5
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_6
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_7
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_8
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_9
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_10
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_11
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_12
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_13
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_14
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_15
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_16
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_17
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_18
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_19
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_20
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_21
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_22
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_23
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_24
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_25
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_26
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_27
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_28
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_29
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_30
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_31
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_32
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_33
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_34
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_35
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_36
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_37
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_38
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_39
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_40
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_41
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_42
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_43
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW01_cmp6_44
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_19
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_18
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_17
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_16
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_15
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_14
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_13
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_12
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_11
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_10
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_9
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_8
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_7
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_6
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_5
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_4
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_3
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_2
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_1
+                       8000              saed32rvt_ff1p16vn40c
+Image_Classifier_DW_mult_tc_0
+                       8000              saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+Image_Classifier                       2.37e+03 4.70e+04 7.18e+11 7.68e+05 100.0
+  N_9/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_0)
+                                         44.442  229.678 3.16e+09 3.43e+03   0.4
+  N_9/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_1)
+                                         44.428  229.166 3.16e+09 3.43e+03   0.4
+  N_8/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_2)
+                                         44.381  229.213 3.16e+09 3.43e+03   0.4
+  N_8/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_3)
+                                         44.359  228.890 3.16e+09 3.43e+03   0.4
+  N_7/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_4)
+                                         44.502  229.922 3.16e+09 3.43e+03   0.4
+  N_7/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_5)
+                                         44.495  229.553 3.16e+09 3.43e+03   0.4
+  N_6/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_6)
+                                         44.464  229.750 3.16e+09 3.43e+03   0.4
+  N_6/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_7)
+                                         44.392  229.098 3.16e+09 3.43e+03   0.4
+  N_5/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_8)
+                                         44.422  229.372 3.16e+09 3.43e+03   0.4
+  N_5/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_9)
+                                         44.384  228.944 3.16e+09 3.43e+03   0.4
+  N_4/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_10)
+                                         44.382  229.228 3.16e+09 3.43e+03   0.4
+  N_4/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_11)
+                                         44.480  229.616 3.16e+09 3.43e+03   0.4
+  N_3/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_12)
+                                         44.488  229.791 3.16e+09 3.43e+03   0.4
+  N_3/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_13)
+                                         44.447  229.272 3.16e+09 3.43e+03   0.4
+  N_2/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_14)
+                                         44.453  229.673 3.16e+09 3.43e+03   0.4
+  N_2/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_15)
+                                         44.395  229.025 3.16e+09 3.43e+03   0.4
+  N_1/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_16)
+                                         44.570  230.225 3.16e+09 3.43e+03   0.4
+  N_1/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_17)
+                                         44.488  229.555 3.16e+09 3.43e+03   0.4
+  N_0/Mult_1/mult_50 (Image_Classifier_DW_mult_tc_18)
+                                         44.441  229.461 3.16e+09 3.43e+03   0.4
+  N_0/Mult_0/mult_50 (Image_Classifier_DW_mult_tc_19)
+                                         44.411  229.203 3.16e+09 3.43e+03   0.4
+  r1294 (Image_Classifier_DW01_cmp6_44)
+                                          3.600   24.155 4.07e+08  434.622   0.1
+  r1295 (Image_Classifier_DW01_cmp6_43)
+                                          3.600   22.597 3.98e+08  424.107   0.1
+  r1296 (Image_Classifier_DW01_cmp6_42)
+                                          5.372   25.322 4.22e+08  453.055   0.1
+  r1297 (Image_Classifier_DW01_cmp6_41)
+                                          5.400   25.375 4.23e+08  453.876   0.1
+  r1298 (Image_Classifier_DW01_cmp6_40)
+                                          5.189   25.148 4.21e+08  451.280   0.1
+  r1299 (Image_Classifier_DW01_cmp6_39)
+                                          5.000   25.001 4.19e+08  449.032   0.1
+  r1300 (Image_Classifier_DW01_cmp6_38)
+                                          4.979   25.154 4.19e+08  449.215   0.1
+  r1301 (Image_Classifier_DW01_cmp6_37)
+                                          5.046   24.014 3.57e+08  385.702   0.1
+  r1302 (Image_Classifier_DW01_cmp6_36)
+                                          4.992   24.028 3.54e+08  383.491   0.0
+  r1303 (Image_Classifier_DW01_cmp6_35)
+                                          3.158   25.132 3.73e+08  401.637   0.1
+  r1304 (Image_Classifier_DW01_cmp6_34)
+                                          5.395   25.512 4.22e+08  453.194   0.1
+  r1305 (Image_Classifier_DW01_cmp6_33)
+                                          5.435   25.636 4.23e+08  454.165   0.1
+  r1306 (Image_Classifier_DW01_cmp6_32)
+                                          5.439   25.881 4.23e+08  454.156   0.1
+  r1307 (Image_Classifier_DW01_cmp6_31)
+                                          3.707   23.017 4.08e+08  434.236   0.1
+  r1308 (Image_Classifier_DW01_cmp6_30)
+                                          5.215   25.586 4.21e+08  451.788   0.1
+  r1309 (Image_Classifier_DW01_cmp6_29)
+                                          5.078   25.206 3.75e+08  405.173   0.1
+  r1310 (Image_Classifier_DW01_cmp6_28)
+                                          5.022   25.407 3.82e+08  412.074   0.1
+  r1311 (Image_Classifier_DW01_cmp6_27)
+                                          4.925   26.417 3.91e+08  422.656   0.1
+  r1312 (Image_Classifier_DW01_cmp6_26)
+                                          5.437   25.755 4.23e+08  454.269   0.1
+  r1313 (Image_Classifier_DW01_cmp6_25)
+                                          5.367   25.831 4.22e+08  452.962   0.1
+  r1314 (Image_Classifier_DW01_cmp6_24)
+                                          5.392   25.665 4.22e+08  453.287   0.1
+  r1315 (Image_Classifier_DW01_cmp6_23)
+                                          5.446   25.733 4.23e+08  454.125   0.1
+  r1316 (Image_Classifier_DW01_cmp6_22)
+                                          5.111   25.298 3.78e+08  407.938   0.1
+  r1317 (Image_Classifier_DW01_cmp6_21)
+                                          5.066   25.520 3.77e+08  407.333   0.1
+  r1318 (Image_Classifier_DW01_cmp6_20)
+                                          5.441   24.549 4.23e+08  453.236   0.1
+  r1319 (Image_Classifier_DW01_cmp6_19)
+                                          5.667   26.529 3.98e+08  429.787   0.1
+  r1320 (Image_Classifier_DW01_cmp6_18)
+                                          5.390   24.646 4.22e+08  452.343   0.1
+  r1321 (Image_Classifier_DW01_cmp6_17)
+                                          5.440   24.434 4.23e+08  452.794   0.1
+  r1322 (Image_Classifier_DW01_cmp6_16)
+                                          6.186   26.121 3.91e+08  423.627   0.1
+  r1323 (Image_Classifier_DW01_cmp6_15)
+                                          5.240   24.952 3.84e+08  414.491   0.1
+  r1324 (Image_Classifier_DW01_cmp6_14)
+                                          5.272   24.625 4.22e+08  451.488   0.1
+  r1325 (Image_Classifier_DW01_cmp6_13)
+                                          5.368   24.567 4.22e+08  452.191   0.1
+  r1326 (Image_Classifier_DW01_cmp6_12)
+                                          5.275   24.549 4.22e+08  451.460   0.1
+  r1327 (Image_Classifier_DW01_cmp6_11)
+                                          4.483   19.360 3.32e+08  355.490   0.0
+  r1328 (Image_Classifier_DW01_cmp6_10)
+                                          4.450   19.918 3.40e+08  364.659   0.0
+  r1329 (Image_Classifier_DW01_cmp6_9)    5.367   24.822 4.22e+08  452.391   0.1
+  r1330 (Image_Classifier_DW01_cmp6_8)    5.421   25.039 4.23e+08  453.342   0.1
+  r1331 (Image_Classifier_DW01_cmp6_7)    6.001   25.518 3.90e+08  421.247   0.1
+  r1332 (Image_Classifier_DW01_cmp6_6)    5.972   25.858 3.96e+08  427.404   0.1
+  r1333 (Image_Classifier_DW01_cmp6_5)    5.426   24.706 4.23e+08  453.058   0.1
+  r1334 (Image_Classifier_DW01_cmp6_4)    5.965   25.471 3.89e+08  420.531   0.1
+  r1335 (Image_Classifier_DW01_cmp6_3)    5.855   25.677 3.94e+08  425.791   0.1
+  r1336 (Image_Classifier_DW01_cmp6_2)    3.781   19.871 3.36e+08  359.444   0.0
+  r1337 (Image_Classifier_DW01_cmp6_1)    3.820   20.449 3.41e+08  365.691   0.0
+  r1338 (Image_Classifier_DW01_cmp6_0)    3.823   19.924 3.41e+08  365.123   0.0
+  m1/add_18 (Image_Classifier_DW01_inc_0)
+                                       5.81e-02    0.161 7.31e+07   73.331   0.0
+  N_0/a0/add_13 (Image_Classifier_DW01_add_29)
+                                          0.970      N/A 1.39e+08  139.153   0.0
+  N_1/a0/add_13 (Image_Classifier_DW01_add_28)
+                                          1.031      N/A 1.40e+08  140.515   0.0
+  N_2/a0/add_13 (Image_Classifier_DW01_add_27)
+                                          1.026      N/A 1.40e+08  140.434   0.0
+  N_3/a0/add_13 (Image_Classifier_DW01_add_26)
+                                          1.031      N/A 1.40e+08  140.508   0.0
+  N_4/a0/add_13 (Image_Classifier_DW01_add_25)
+                                          1.031      N/A 1.40e+08  140.403   0.0
+  N_5/a0/add_13 (Image_Classifier_DW01_add_24)
+                                          1.029      N/A 1.40e+08  140.422   0.0
+  N_6/a0/add_13 (Image_Classifier_DW01_add_23)
+                                          1.028      N/A 1.40e+08  140.463   0.0
+  N_7/a0/add_13 (Image_Classifier_DW01_add_22)
+                                          1.029      N/A 1.40e+08  140.317   0.0
+  N_8/a0/add_13 (Image_Classifier_DW01_add_21)
+                                          1.021      N/A 1.40e+08  140.557   0.0
+  N_9/a0/add_13 (Image_Classifier_DW01_add_20)
+                                          1.027      N/A 1.40e+08  140.389   0.0
+  AB_0/add_46 (Image_Classifier_DW01_add_19)
+                                          0.886      N/A 1.98e+08  197.625   0.0
+  AB_1/add_46 (Image_Classifier_DW01_add_18)
+                                          0.948      N/A 1.99e+08  198.401   0.0
+  AB_2/add_46 (Image_Classifier_DW01_add_17)
+                                          0.941      N/A 1.99e+08  198.309   0.0
+  AB_3/add_46 (Image_Classifier_DW01_add_16)
+                                          0.937      N/A 1.99e+08  198.408   0.0
+  AB_4/add_46 (Image_Classifier_DW01_add_15)
+                                          0.940      N/A 1.99e+08  198.341   0.0
+  AB_5/add_46 (Image_Classifier_DW01_add_14)
+                                          0.933      N/A 1.99e+08  198.398   0.0
+  AB_6/add_46 (Image_Classifier_DW01_add_13)
+                                          0.949      N/A 1.99e+08  198.427   0.0
+  AB_7/add_46 (Image_Classifier_DW01_add_12)
+                                          0.940      N/A 1.99e+08  198.385   0.0
+  AB_8/add_46 (Image_Classifier_DW01_add_11)
+                                          0.947      N/A 1.99e+08  198.425   0.0
+  AB_9/add_46 (Image_Classifier_DW01_add_10)
+                                          0.943      N/A 1.99e+08  198.455   0.0
+  N_0/Add_0/add_46 (Image_Classifier_DW01_add_9)
+                                          2.354    5.410 1.70e+08  177.286   0.0
+  N_1/Add_0/add_46 (Image_Classifier_DW01_add_8)
+                                          2.357    5.483 1.69e+08  177.125   0.0
+  N_2/Add_0/add_46 (Image_Classifier_DW01_add_7)
+                                          2.353    5.479 1.70e+08  177.593   0.0
+  N_3/Add_0/add_46 (Image_Classifier_DW01_add_6)
+                                          2.357    5.489 1.69e+08  177.325   0.0
+  N_4/Add_0/add_46 (Image_Classifier_DW01_add_5)
+                                          2.347    5.456 1.69e+08  177.300   0.0
+  N_5/Add_0/add_46 (Image_Classifier_DW01_add_4)
+                                          2.351    5.463 1.69e+08  177.231   0.0
+  N_6/Add_0/add_46 (Image_Classifier_DW01_add_3)
+                                          2.340    5.466 1.70e+08  177.344   0.0
+  N_7/Add_0/add_46 (Image_Classifier_DW01_add_2)
+                                          2.370    5.574 1.70e+08  177.678   0.0
+  N_8/Add_0/add_46 (Image_Classifier_DW01_add_1)
+                                          2.349    5.475 1.70e+08  177.408   0.0
+  N_9/Add_0/add_46 (Image_Classifier_DW01_add_0)
+                                          2.346    5.384 1.70e+08  177.326   0.0
+1

@@ -1,0 +1,854 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Wed Dec  9 18:28:05 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_11
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  U305174/Y (NBUFFX2_RVT)                                 0.02       0.07 f
+  r1327/B[1] (Image_Classifier_DW01_cmp6_11)              0.00       0.07 f
+  r1327/U52/Y (INVX1_RVT)                                 0.01       0.08 r
+  r1327/U42/Y (XOR2X1_RVT)                                0.04       0.12 f
+  r1327/ULTI1_1/Y (NAND2X0_RVT)                           0.01       0.13 r
+  r1327/U77/Y (OAI21X1_RVT)                               0.03       0.16 f
+  r1327/ULTI1_2/Y (NAND2X0_RVT)                           0.01       0.17 r
+  r1327/U41/Y (OAI21X1_RVT)                               0.03       0.20 f
+  r1327/ULTI1_3/Y (NAND2X0_RVT)                           0.01       0.22 r
+  r1327/U40/Y (OAI21X1_RVT)                               0.03       0.25 f
+  r1327/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.26 r
+  r1327/U21/Y (OAI21X1_RVT)                               0.03       0.29 f
+  r1327/ULTI1_5/Y (NAND2X0_RVT)                           0.01       0.30 r
+  r1327/U20/Y (OAI21X1_RVT)                               0.03       0.33 f
+  r1327/ULTI1_6/Y (NAND2X0_RVT)                           0.01       0.34 r
+  r1327/U23/Y (OAI21X1_RVT)                               0.03       0.37 f
+  r1327/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.38 r
+  r1327/U22/Y (OAI21X1_RVT)                               0.03       0.41 f
+  r1327/ULTI1_8/Y (NAND2X0_RVT)                           0.01       0.43 r
+  r1327/U27/Y (OAI21X1_RVT)                               0.03       0.46 f
+  r1327/ULTI1_9/Y (NAND2X0_RVT)                           0.01       0.47 r
+  r1327/U24/Y (OAI21X1_RVT)                               0.03       0.50 f
+  r1327/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.51 r
+  r1327/U29/Y (OAI21X1_RVT)                               0.03       0.54 f
+  r1327/ULTI1_11/Y (NAND2X0_RVT)                          0.01       0.55 r
+  r1327/U28/Y (OAI21X1_RVT)                               0.03       0.58 f
+  r1327/ULTI1_12/Y (NAND2X0_RVT)                          0.01       0.59 r
+  r1327/U31/Y (OAI21X1_RVT)                               0.03       0.62 f
+  r1327/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.64 r
+  r1327/U30/Y (OAI21X1_RVT)                               0.03       0.67 f
+  r1327/ULTI1_14/Y (NAND2X0_RVT)                          0.01       0.68 r
+  r1327/U33/Y (OAI21X1_RVT)                               0.03       0.71 f
+  r1327/ULTI1_15/Y (NAND2X0_RVT)                          0.01       0.72 r
+  r1327/U32/Y (OAI21X1_RVT)                               0.03       0.75 f
+  r1327/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.76 r
+  r1327/U35/Y (OAI21X1_RVT)                               0.03       0.79 f
+  r1327/ULTI1_17/Y (NAND2X0_RVT)                          0.01       0.81 r
+  r1327/U34/Y (OAI21X1_RVT)                               0.03       0.84 f
+  r1327/ULTI1_18/Y (NAND2X0_RVT)                          0.01       0.85 r
+  r1327/U37/Y (OAI21X1_RVT)                               0.03       0.88 f
+  r1327/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.89 r
+  r1327/U36/Y (OAI21X1_RVT)                               0.03       0.92 f
+  r1327/ULTI1_20/Y (NAND2X0_RVT)                          0.01       0.93 r
+  r1327/U39/Y (OAI21X1_RVT)                               0.03       0.96 f
+  r1327/ULTI1_21/Y (NAND2X0_RVT)                          0.01       0.97 r
+  r1327/U38/Y (OAI21X1_RVT)                               0.03       1.00 f
+  r1327/ULTI1_22/Y (NAND2X0_RVT)                          0.01       1.02 r
+  r1327/U19/Y (OAI21X1_RVT)                               0.03       1.05 f
+  r1327/ULTI1_23/Y (NAND2X0_RVT)                          0.01       1.06 r
+  r1327/U18/Y (OAI21X1_RVT)                               0.03       1.09 f
+  r1327/ULTI1_24/Y (NAND2X0_RVT)                          0.01       1.10 r
+  r1327/U3/Y (OAI21X1_RVT)                                0.03       1.13 f
+  r1327/ULTI1/Y (NAND2X0_RVT)                             0.01       1.14 r
+  r1327/ULTI2/Y (NAND2X0_RVT)                             0.01       1.15 f
+  r1327/LT (Image_Classifier_DW01_cmp6_11)                0.00       1.15 f
+  U288103/Y (NAND4X0_RVT)                                 0.02       1.17 r
+  U288101/Y (NAND4X0_RVT)                                 0.02       1.19 f
+  U288100/Y (OR3X1_RVT)                                   0.02       1.21 f
+  U305479/Y (INVX1_RVT)                                   0.01       1.21 r
+  U288099/Y (AO221X1_RVT)                                 0.02       1.23 r
+  Image_Number[0] (out)                                   0.00       1.23 r
+  data arrival time                                                  1.23
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_11
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  U305174/Y (NBUFFX2_RVT)                                 0.02       0.07 f
+  r1327/B[1] (Image_Classifier_DW01_cmp6_11)              0.00       0.07 f
+  r1327/U52/Y (INVX1_RVT)                                 0.01       0.08 r
+  r1327/U42/Y (XOR2X1_RVT)                                0.03       0.11 f
+  r1327/ULTI1_1/Y (NAND2X0_RVT)                           0.01       0.13 r
+  r1327/U77/Y (OAI21X1_RVT)                               0.03       0.16 f
+  r1327/ULTI1_2/Y (NAND2X0_RVT)                           0.01       0.17 r
+  r1327/U41/Y (OAI21X1_RVT)                               0.03       0.20 f
+  r1327/ULTI1_3/Y (NAND2X0_RVT)                           0.01       0.21 r
+  r1327/U40/Y (OAI21X1_RVT)                               0.03       0.24 f
+  r1327/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.25 r
+  r1327/U21/Y (OAI21X1_RVT)                               0.03       0.28 f
+  r1327/ULTI1_5/Y (NAND2X0_RVT)                           0.01       0.29 r
+  r1327/U20/Y (OAI21X1_RVT)                               0.03       0.32 f
+  r1327/ULTI1_6/Y (NAND2X0_RVT)                           0.01       0.34 r
+  r1327/U23/Y (OAI21X1_RVT)                               0.03       0.37 f
+  r1327/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.38 r
+  r1327/U22/Y (OAI21X1_RVT)                               0.03       0.41 f
+  r1327/ULTI1_8/Y (NAND2X0_RVT)                           0.01       0.42 r
+  r1327/U27/Y (OAI21X1_RVT)                               0.03       0.45 f
+  r1327/ULTI1_9/Y (NAND2X0_RVT)                           0.01       0.46 r
+  r1327/U24/Y (OAI21X1_RVT)                               0.03       0.49 f
+  r1327/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.50 r
+  r1327/U29/Y (OAI21X1_RVT)                               0.03       0.53 f
+  r1327/ULTI1_11/Y (NAND2X0_RVT)                          0.01       0.55 r
+  r1327/U28/Y (OAI21X1_RVT)                               0.03       0.58 f
+  r1327/ULTI1_12/Y (NAND2X0_RVT)                          0.01       0.59 r
+  r1327/U31/Y (OAI21X1_RVT)                               0.03       0.62 f
+  r1327/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.63 r
+  r1327/U30/Y (OAI21X1_RVT)                               0.03       0.66 f
+  r1327/ULTI1_14/Y (NAND2X0_RVT)                          0.01       0.67 r
+  r1327/U33/Y (OAI21X1_RVT)                               0.03       0.70 f
+  r1327/ULTI1_15/Y (NAND2X0_RVT)                          0.01       0.72 r
+  r1327/U32/Y (OAI21X1_RVT)                               0.03       0.75 f
+  r1327/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.76 r
+  r1327/U35/Y (OAI21X1_RVT)                               0.03       0.79 f
+  r1327/ULTI1_17/Y (NAND2X0_RVT)                          0.01       0.80 r
+  r1327/U34/Y (OAI21X1_RVT)                               0.03       0.83 f
+  r1327/ULTI1_18/Y (NAND2X0_RVT)                          0.01       0.84 r
+  r1327/U37/Y (OAI21X1_RVT)                               0.03       0.87 f
+  r1327/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.88 r
+  r1327/U36/Y (OAI21X1_RVT)                               0.03       0.91 f
+  r1327/ULTI1_20/Y (NAND2X0_RVT)                          0.01       0.93 r
+  r1327/U39/Y (OAI21X1_RVT)                               0.03       0.96 f
+  r1327/ULTI1_21/Y (NAND2X0_RVT)                          0.01       0.97 r
+  r1327/U38/Y (OAI21X1_RVT)                               0.03       1.00 f
+  r1327/ULTI1_22/Y (NAND2X0_RVT)                          0.01       1.01 r
+  r1327/U19/Y (OAI21X1_RVT)                               0.03       1.04 f
+  r1327/ULTI1_23/Y (NAND2X0_RVT)                          0.01       1.05 r
+  r1327/U18/Y (OAI21X1_RVT)                               0.03       1.08 f
+  r1327/ULTI1_24/Y (NAND2X0_RVT)                          0.01       1.09 r
+  r1327/U3/Y (OAI21X1_RVT)                                0.03       1.12 f
+  r1327/ULTI1/Y (NAND2X0_RVT)                             0.01       1.14 r
+  r1327/ULTI2/Y (NAND2X0_RVT)                             0.01       1.15 f
+  r1327/LT (Image_Classifier_DW01_cmp6_11)                0.00       1.15 f
+  U288103/Y (NAND4X0_RVT)                                 0.02       1.16 r
+  U288101/Y (NAND4X0_RVT)                                 0.02       1.18 f
+  U288100/Y (OR3X1_RVT)                                   0.02       1.20 f
+  U305479/Y (INVX1_RVT)                                   0.01       1.21 r
+  U288099/Y (AO221X1_RVT)                                 0.02       1.23 r
+  Image_Number[0] (out)                                   0.00       1.23 r
+  data arrival time                                                  1.23
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_11
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  U305174/Y (NBUFFX2_RVT)                                 0.02       0.07 f
+  r1327/B[1] (Image_Classifier_DW01_cmp6_11)              0.00       0.07 f
+  r1327/U52/Y (INVX1_RVT)                                 0.01       0.08 r
+  r1327/U42/Y (XOR2X1_RVT)                                0.04       0.12 f
+  r1327/ULTI1_1/Y (NAND2X0_RVT)                           0.01       0.13 r
+  r1327/U77/Y (OAI21X1_RVT)                               0.03       0.16 f
+  r1327/ULTI1_2/Y (NAND2X0_RVT)                           0.01       0.17 r
+  r1327/U41/Y (OAI21X1_RVT)                               0.03       0.20 f
+  r1327/ULTI1_3/Y (NAND2X0_RVT)                           0.01       0.22 r
+  r1327/U40/Y (OAI21X1_RVT)                               0.03       0.25 f
+  r1327/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.26 r
+  r1327/U21/Y (OAI21X1_RVT)                               0.03       0.29 f
+  r1327/ULTI1_5/Y (NAND2X0_RVT)                           0.01       0.30 r
+  r1327/U20/Y (OAI21X1_RVT)                               0.03       0.33 f
+  r1327/ULTI1_6/Y (NAND2X0_RVT)                           0.01       0.34 r
+  r1327/U23/Y (OAI21X1_RVT)                               0.03       0.37 f
+  r1327/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.38 r
+  r1327/U22/Y (OAI21X1_RVT)                               0.03       0.41 f
+  r1327/ULTI1_8/Y (NAND2X0_RVT)                           0.01       0.43 r
+  r1327/U27/Y (OAI21X1_RVT)                               0.03       0.46 f
+  r1327/ULTI1_9/Y (NAND2X0_RVT)                           0.01       0.47 r
+  r1327/U24/Y (OAI21X1_RVT)                               0.03       0.50 f
+  r1327/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.51 r
+  r1327/U29/Y (OAI21X1_RVT)                               0.03       0.54 f
+  r1327/ULTI1_11/Y (NAND2X0_RVT)                          0.01       0.55 r
+  r1327/U28/Y (OAI21X1_RVT)                               0.03       0.58 f
+  r1327/ULTI1_12/Y (NAND2X0_RVT)                          0.01       0.59 r
+  r1327/U31/Y (OAI21X1_RVT)                               0.03       0.62 f
+  r1327/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.64 r
+  r1327/U30/Y (OAI21X1_RVT)                               0.03       0.67 f
+  r1327/ULTI1_14/Y (NAND2X0_RVT)                          0.01       0.68 r
+  r1327/U33/Y (OAI21X1_RVT)                               0.03       0.71 f
+  r1327/ULTI1_15/Y (NAND2X0_RVT)                          0.01       0.72 r
+  r1327/U32/Y (OAI21X1_RVT)                               0.03       0.75 f
+  r1327/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.76 r
+  r1327/U35/Y (OAI21X1_RVT)                               0.03       0.79 f
+  r1327/ULTI1_17/Y (NAND2X0_RVT)                          0.01       0.81 r
+  r1327/U34/Y (OAI21X1_RVT)                               0.03       0.84 f
+  r1327/ULTI1_18/Y (NAND2X0_RVT)                          0.01       0.85 r
+  r1327/U37/Y (OAI21X1_RVT)                               0.03       0.88 f
+  r1327/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.89 r
+  r1327/U36/Y (OAI21X1_RVT)                               0.03       0.92 f
+  r1327/ULTI1_20/Y (NAND2X0_RVT)                          0.01       0.93 r
+  r1327/U39/Y (OAI21X1_RVT)                               0.03       0.96 f
+  r1327/ULTI1_21/Y (NAND2X0_RVT)                          0.01       0.97 r
+  r1327/U38/Y (OAI21X1_RVT)                               0.03       1.00 f
+  r1327/ULTI1_22/Y (NAND2X0_RVT)                          0.01       1.02 r
+  r1327/U19/Y (OAI21X1_RVT)                               0.03       1.05 f
+  r1327/ULTI1_23/Y (NAND2X0_RVT)                          0.01       1.06 r
+  r1327/U18/Y (OAI21X1_RVT)                               0.03       1.09 f
+  r1327/ULTI1_24/Y (NAND2X0_RVT)                          0.01       1.10 r
+  r1327/U3/Y (OAI21X1_RVT)                                0.03       1.13 f
+  r1327/ULTI1/Y (NAND2X0_RVT)                             0.01       1.14 r
+  r1327/ULTI2/Y (NAND2X0_RVT)                             0.01       1.15 f
+  r1327/LT (Image_Classifier_DW01_cmp6_11)                0.00       1.15 f
+  U288103/Y (NAND4X0_RVT)                                 0.02       1.17 r
+  U288101/Y (NAND4X0_RVT)                                 0.02       1.19 f
+  U288100/Y (OR3X1_RVT)                                   0.02       1.21 f
+  U288093/Y (NAND2X0_RVT)                                 0.01       1.22 r
+  Image_Number[3] (out)                                   0.00       1.22 r
+  data arrival time                                                  1.22
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_11
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_8/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  U305174/Y (NBUFFX2_RVT)                                 0.02       0.07 f
+  r1327/B[1] (Image_Classifier_DW01_cmp6_11)              0.00       0.07 f
+  r1327/U52/Y (INVX1_RVT)                                 0.01       0.08 r
+  r1327/U42/Y (XOR2X1_RVT)                                0.03       0.11 f
+  r1327/ULTI1_1/Y (NAND2X0_RVT)                           0.01       0.13 r
+  r1327/U77/Y (OAI21X1_RVT)                               0.03       0.16 f
+  r1327/ULTI1_2/Y (NAND2X0_RVT)                           0.01       0.17 r
+  r1327/U41/Y (OAI21X1_RVT)                               0.03       0.20 f
+  r1327/ULTI1_3/Y (NAND2X0_RVT)                           0.01       0.21 r
+  r1327/U40/Y (OAI21X1_RVT)                               0.03       0.24 f
+  r1327/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.25 r
+  r1327/U21/Y (OAI21X1_RVT)                               0.03       0.28 f
+  r1327/ULTI1_5/Y (NAND2X0_RVT)                           0.01       0.29 r
+  r1327/U20/Y (OAI21X1_RVT)                               0.03       0.32 f
+  r1327/ULTI1_6/Y (NAND2X0_RVT)                           0.01       0.34 r
+  r1327/U23/Y (OAI21X1_RVT)                               0.03       0.37 f
+  r1327/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.38 r
+  r1327/U22/Y (OAI21X1_RVT)                               0.03       0.41 f
+  r1327/ULTI1_8/Y (NAND2X0_RVT)                           0.01       0.42 r
+  r1327/U27/Y (OAI21X1_RVT)                               0.03       0.45 f
+  r1327/ULTI1_9/Y (NAND2X0_RVT)                           0.01       0.46 r
+  r1327/U24/Y (OAI21X1_RVT)                               0.03       0.49 f
+  r1327/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.50 r
+  r1327/U29/Y (OAI21X1_RVT)                               0.03       0.53 f
+  r1327/ULTI1_11/Y (NAND2X0_RVT)                          0.01       0.55 r
+  r1327/U28/Y (OAI21X1_RVT)                               0.03       0.58 f
+  r1327/ULTI1_12/Y (NAND2X0_RVT)                          0.01       0.59 r
+  r1327/U31/Y (OAI21X1_RVT)                               0.03       0.62 f
+  r1327/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.63 r
+  r1327/U30/Y (OAI21X1_RVT)                               0.03       0.66 f
+  r1327/ULTI1_14/Y (NAND2X0_RVT)                          0.01       0.67 r
+  r1327/U33/Y (OAI21X1_RVT)                               0.03       0.70 f
+  r1327/ULTI1_15/Y (NAND2X0_RVT)                          0.01       0.72 r
+  r1327/U32/Y (OAI21X1_RVT)                               0.03       0.75 f
+  r1327/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.76 r
+  r1327/U35/Y (OAI21X1_RVT)                               0.03       0.79 f
+  r1327/ULTI1_17/Y (NAND2X0_RVT)                          0.01       0.80 r
+  r1327/U34/Y (OAI21X1_RVT)                               0.03       0.83 f
+  r1327/ULTI1_18/Y (NAND2X0_RVT)                          0.01       0.84 r
+  r1327/U37/Y (OAI21X1_RVT)                               0.03       0.87 f
+  r1327/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.88 r
+  r1327/U36/Y (OAI21X1_RVT)                               0.03       0.91 f
+  r1327/ULTI1_20/Y (NAND2X0_RVT)                          0.01       0.93 r
+  r1327/U39/Y (OAI21X1_RVT)                               0.03       0.96 f
+  r1327/ULTI1_21/Y (NAND2X0_RVT)                          0.01       0.97 r
+  r1327/U38/Y (OAI21X1_RVT)                               0.03       1.00 f
+  r1327/ULTI1_22/Y (NAND2X0_RVT)                          0.01       1.01 r
+  r1327/U19/Y (OAI21X1_RVT)                               0.03       1.04 f
+  r1327/ULTI1_23/Y (NAND2X0_RVT)                          0.01       1.05 r
+  r1327/U18/Y (OAI21X1_RVT)                               0.03       1.08 f
+  r1327/ULTI1_24/Y (NAND2X0_RVT)                          0.01       1.09 r
+  r1327/U3/Y (OAI21X1_RVT)                                0.03       1.12 f
+  r1327/ULTI1/Y (NAND2X0_RVT)                             0.01       1.14 r
+  r1327/ULTI2/Y (NAND2X0_RVT)                             0.01       1.15 f
+  r1327/LT (Image_Classifier_DW01_cmp6_11)                0.00       1.15 f
+  U288103/Y (NAND4X0_RVT)                                 0.02       1.16 r
+  U288101/Y (NAND4X0_RVT)                                 0.02       1.18 f
+  U288100/Y (OR3X1_RVT)                                   0.02       1.20 f
+  U288093/Y (NAND2X0_RVT)                                 0.01       1.21 r
+  Image_Number[3] (out)                                   0.00       1.21 r
+  data arrival time                                                  1.21
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_27
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.07       0.07 f
+  U305313/Y (NBUFFX2_RVT)                                 0.02       0.09 f
+  r1311/B[1] (Image_Classifier_DW01_cmp6_27)              0.00       0.09 f
+  r1311/U64/Y (INVX1_RVT)                                 0.01       0.10 r
+  r1311/U88/Y (INVX1_RVT)                                 0.01       0.11 f
+  r1311/U55/Y (XNOR2X1_RVT)                               0.04       0.14 r
+  r1311/U1/Y (AO22X1_RVT)                                 0.03       0.17 r
+  r1311/U6/Y (AO22X1_RVT)                                 0.03       0.20 r
+  r1311/U26/Y (AO22X1_RVT)                                0.02       0.21 r
+  r1311/UGTI1_4/Y (NAND2X0_RVT)                           0.01       0.22 f
+  r1311/UGTI2_4/Y (NAND2X0_RVT)                           0.01       0.24 r
+  r1311/U15/Y (AO22X1_RVT)                                0.03       0.26 r
+  r1311/U30/Y (AO22X1_RVT)                                0.02       0.28 r
+  r1311/UGTI1_7/Y (NAND2X0_RVT)                           0.01       0.29 f
+  r1311/UGTI2_7/Y (NAND2X0_RVT)                           0.01       0.31 r
+  r1311/U3/Y (AO22X1_RVT)                                 0.03       0.33 r
+  r1311/U33/Y (AO22X1_RVT)                                0.02       0.35 r
+  r1311/UGTI1_10/Y (NAND2X0_RVT)                          0.01       0.36 f
+  r1311/UGTI2_10/Y (NAND2X0_RVT)                          0.01       0.37 r
+  r1311/U9/Y (AO22X1_RVT)                                 0.03       0.40 r
+  r1311/U28/Y (AO22X1_RVT)                                0.02       0.42 r
+  r1311/UGTI1_13/Y (NAND2X0_RVT)                          0.01       0.43 f
+  r1311/UGTI2_13/Y (NAND2X0_RVT)                          0.01       0.44 r
+  r1311/U17/Y (AO22X1_RVT)                                0.03       0.47 r
+  r1311/U32/Y (AO22X1_RVT)                                0.02       0.48 r
+  r1311/UGTI1_16/Y (NAND2X0_RVT)                          0.01       0.49 f
+  r1311/UGTI2_16/Y (NAND2X0_RVT)                          0.01       0.51 r
+  r1311/U11/Y (AO22X1_RVT)                                0.03       0.53 r
+  r1311/U19/Y (AO22X1_RVT)                                0.02       0.55 r
+  r1311/UGTI1_19/Y (NAND2X0_RVT)                          0.01       0.56 f
+  r1311/UGTI2_19/Y (NAND2X0_RVT)                          0.01       0.57 r
+  r1311/U2/Y (AO22X1_RVT)                                 0.03       0.60 r
+  r1311/U24/Y (AO22X1_RVT)                                0.02       0.62 r
+  r1311/UGTI1_22/Y (NAND2X0_RVT)                          0.01       0.63 f
+  r1311/UGTI2_22/Y (NAND2X0_RVT)                          0.01       0.64 r
+  r1311/U5/Y (AO22X1_RVT)                                 0.03       0.67 r
+  r1311/U34/Y (AO22X1_RVT)                                0.02       0.69 r
+  r1311/UGTI1/Y (NAND2X0_RVT)                             0.01       0.70 f
+  r1311/UGTI2/Y (NAND2X0_RVT)                             0.01       0.71 r
+  r1311/GT (Image_Classifier_DW01_cmp6_27)                0.00       0.71 r
+  U288134/Y (AND3X1_RVT)                                  0.02       0.73 r
+  U288132/Y (NAND4X0_RVT)                                 0.02       0.75 f
+  U288131/Y (NAND2X0_RVT)                                 0.02       0.77 r
+  U305482/Y (INVX1_RVT)                                   0.01       0.78 f
+  U288120/Y (NAND3X0_RVT)                                 0.01       0.80 r
+  U305480/Y (INVX1_RVT)                                   0.01       0.81 f
+  U288097/Y (AO22X1_RVT)                                  0.02       0.82 f
+  Image_Number[1] (out)                                   0.00       0.82 f
+  data arrival time                                                  0.82
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -0.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: AB_5/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_19
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_5/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_5/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.07       0.07 f
+  r1319/B[1] (Image_Classifier_DW01_cmp6_19)              0.00       0.07 f
+  r1319/U74/Y (INVX1_RVT)                                 0.01       0.08 r
+  r1319/U111/Y (INVX1_RVT)                                0.01       0.09 f
+  r1319/U40/Y (XNOR2X1_RVT)                               0.04       0.13 r
+  r1319/ULTI1_1/Y (NAND2X0_RVT)                           0.01       0.14 f
+  r1319/ULTI2_1/Y (NAND2X0_RVT)                           0.01       0.15 r
+  r1319/U29/Y (AO22X1_RVT)                                0.03       0.18 r
+  r1319/U3/Y (AO22X1_RVT)                                 0.03       0.20 r
+  r1319/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.21 f
+  r1319/ULTI2_4/Y (NAND2X0_RVT)                           0.01       0.22 r
+  r1319/U17/Y (AO22X1_RVT)                                0.03       0.25 r
+  r1319/U30/Y (AO22X1_RVT)                                0.03       0.27 r
+  r1319/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.28 f
+  r1319/ULTI2_7/Y (NAND2X0_RVT)                           0.01       0.30 r
+  r1319/U9/Y (AO22X1_RVT)                                 0.03       0.32 r
+  r1319/U18/Y (AO22X1_RVT)                                0.03       0.35 r
+  r1319/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.36 f
+  r1319/ULTI2_10/Y (NAND2X0_RVT)                          0.01       0.37 r
+  r1319/U31/Y (AO22X1_RVT)                                0.03       0.40 r
+  r1319/U5/Y (AO22X1_RVT)                                 0.03       0.42 r
+  r1319/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.43 f
+  r1319/ULTI2_13/Y (NAND2X0_RVT)                          0.01       0.44 r
+  r1319/U19/Y (AO22X1_RVT)                                0.03       0.47 r
+  r1319/U32/Y (AO22X1_RVT)                                0.03       0.49 r
+  r1319/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.50 f
+  r1319/ULTI2_16/Y (NAND2X0_RVT)                          0.01       0.52 r
+  r1319/U12/Y (AO22X1_RVT)                                0.03       0.54 r
+  r1319/U20/Y (AO22X1_RVT)                                0.03       0.57 r
+  r1319/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.58 f
+  r1319/ULTI2_19/Y (NAND2X0_RVT)                          0.01       0.59 r
+  r1319/U33/Y (AO22X1_RVT)                                0.03       0.61 r
+  r1319/U14/Y (AO22X1_RVT)                                0.03       0.64 r
+  r1319/ULTI1_22/Y (NAND2X0_RVT)                          0.01       0.65 f
+  r1319/ULTI2_22/Y (NAND2X0_RVT)                          0.01       0.66 r
+  r1319/U22/Y (AO22X1_RVT)                                0.03       0.69 r
+  r1319/U2/Y (AO22X1_RVT)                                 0.03       0.71 r
+  r1319/ULTI1/Y (NAND2X0_RVT)                             0.01       0.72 f
+  r1319/ULTI2/Y (NAND2X0_RVT)                             0.01       0.74 r
+  r1319/LT (Image_Classifier_DW01_cmp6_19)                0.00       0.74 r
+  U288111/Y (NAND4X0_RVT)                                 0.02       0.76 f
+  U305483/Y (INVX1_RVT)                                   0.01       0.77 r
+  U288106/Y (NOR2X0_RVT)                                  0.03       0.80 f
+  U288095/Y (OAI22X1_RVT)                                 0.03       0.82 r
+  Image_Number[2] (out)                                   0.00       0.82 r
+  data arrival time                                                  0.82
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -0.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_27
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.07       0.07 f
+  U305313/Y (NBUFFX2_RVT)                                 0.02       0.09 f
+  r1311/B[1] (Image_Classifier_DW01_cmp6_27)              0.00       0.09 f
+  r1311/U64/Y (INVX1_RVT)                                 0.01       0.10 r
+  r1311/U88/Y (INVX1_RVT)                                 0.01       0.11 f
+  r1311/U55/Y (XNOR2X1_RVT)                               0.04       0.14 r
+  r1311/U1/Y (AO22X1_RVT)                                 0.03       0.17 r
+  r1311/U6/Y (AO22X1_RVT)                                 0.03       0.20 r
+  r1311/U26/Y (AO22X1_RVT)                                0.02       0.21 r
+  r1311/UGTI1_4/Y (NAND2X0_RVT)                           0.01       0.22 f
+  r1311/UGTI2_4/Y (NAND2X0_RVT)                           0.01       0.24 r
+  r1311/U15/Y (AO22X1_RVT)                                0.03       0.26 r
+  r1311/U30/Y (AO22X1_RVT)                                0.02       0.28 r
+  r1311/UGTI1_7/Y (NAND2X0_RVT)                           0.01       0.29 f
+  r1311/UGTI2_7/Y (NAND2X0_RVT)                           0.01       0.31 r
+  r1311/U3/Y (AO22X1_RVT)                                 0.03       0.33 r
+  r1311/U33/Y (AO22X1_RVT)                                0.02       0.35 r
+  r1311/UGTI1_10/Y (NAND2X0_RVT)                          0.01       0.36 f
+  r1311/UGTI2_10/Y (NAND2X0_RVT)                          0.01       0.37 r
+  r1311/U9/Y (AO22X1_RVT)                                 0.03       0.40 r
+  r1311/U28/Y (AO22X1_RVT)                                0.02       0.42 r
+  r1311/UGTI1_13/Y (NAND2X0_RVT)                          0.01       0.43 f
+  r1311/UGTI2_13/Y (NAND2X0_RVT)                          0.01       0.44 r
+  r1311/U17/Y (AO22X1_RVT)                                0.03       0.47 r
+  r1311/U32/Y (AO22X1_RVT)                                0.02       0.48 r
+  r1311/UGTI1_16/Y (NAND2X0_RVT)                          0.01       0.49 f
+  r1311/UGTI2_16/Y (NAND2X0_RVT)                          0.01       0.51 r
+  r1311/U11/Y (AO22X1_RVT)                                0.03       0.53 r
+  r1311/U19/Y (AO22X1_RVT)                                0.02       0.55 r
+  r1311/UGTI1_19/Y (NAND2X0_RVT)                          0.01       0.56 f
+  r1311/UGTI2_19/Y (NAND2X0_RVT)                          0.01       0.57 r
+  r1311/U2/Y (AO22X1_RVT)                                 0.03       0.60 r
+  r1311/U24/Y (AO22X1_RVT)                                0.02       0.62 r
+  r1311/UGTI1_22/Y (NAND2X0_RVT)                          0.01       0.63 f
+  r1311/UGTI2_22/Y (NAND2X0_RVT)                          0.01       0.64 r
+  r1311/U5/Y (AO22X1_RVT)                                 0.03       0.67 r
+  r1311/U34/Y (AO22X1_RVT)                                0.02       0.69 r
+  r1311/UGTI1/Y (NAND2X0_RVT)                             0.01       0.70 f
+  r1311/UGTI2/Y (NAND2X0_RVT)                             0.01       0.71 r
+  r1311/GT (Image_Classifier_DW01_cmp6_27)                0.00       0.71 r
+  U288134/Y (AND3X1_RVT)                                  0.02       0.73 r
+  U288132/Y (NAND4X0_RVT)                                 0.02       0.75 f
+  U288131/Y (NAND2X0_RVT)                                 0.02       0.77 r
+  U305482/Y (INVX1_RVT)                                   0.01       0.78 f
+  U288120/Y (NAND3X0_RVT)                                 0.01       0.80 r
+  U288095/Y (OAI22X1_RVT)                                 0.02       0.82 f
+  Image_Number[2] (out)                                   0.00       0.82 f
+  data arrival time                                                  0.82
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -0.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Image_Number[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_cmp6_27
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  AB_3/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[1][1]/Q (DFFARX1_RVT)
+                                                          0.07       0.07 f
+  U305313/Y (NBUFFX2_RVT)                                 0.02       0.09 f
+  r1311/B[1] (Image_Classifier_DW01_cmp6_27)              0.00       0.09 f
+  r1311/U64/Y (INVX1_RVT)                                 0.01       0.10 r
+  r1311/U88/Y (INVX1_RVT)                                 0.01       0.11 f
+  r1311/U55/Y (XNOR2X1_RVT)                               0.04       0.14 r
+  r1311/U14/Y (AO22X1_RVT)                                0.03       0.17 r
+  r1311/U21/Y (AO22X1_RVT)                                0.03       0.20 r
+  r1311/U7/Y (AO22X1_RVT)                                 0.02       0.21 r
+  r1311/ULTI1_4/Y (NAND2X0_RVT)                           0.01       0.22 f
+  r1311/ULTI2_4/Y (NAND2X0_RVT)                           0.01       0.24 r
+  r1311/U27/Y (AO22X1_RVT)                                0.03       0.26 r
+  r1311/U16/Y (AO22X1_RVT)                                0.02       0.28 r
+  r1311/ULTI1_7/Y (NAND2X0_RVT)                           0.01       0.29 f
+  r1311/ULTI2_7/Y (NAND2X0_RVT)                           0.01       0.31 r
+  r1311/U31/Y (AO22X1_RVT)                                0.03       0.33 r
+  r1311/U8/Y (AO22X1_RVT)                                 0.02       0.35 r
+  r1311/ULTI1_10/Y (NAND2X0_RVT)                          0.01       0.36 f
+  r1311/ULTI2_10/Y (NAND2X0_RVT)                          0.01       0.37 r
+  r1311/U22/Y (AO22X1_RVT)                                0.03       0.40 r
+  r1311/U4/Y (AO22X1_RVT)                                 0.02       0.42 r
+  r1311/ULTI1_13/Y (NAND2X0_RVT)                          0.01       0.43 f
+  r1311/ULTI2_13/Y (NAND2X0_RVT)                          0.01       0.44 r
+  r1311/U10/Y (AO22X1_RVT)                                0.03       0.47 r
+  r1311/U18/Y (AO22X1_RVT)                                0.02       0.48 r
+  r1311/ULTI1_16/Y (NAND2X0_RVT)                          0.01       0.49 f
+  r1311/ULTI2_16/Y (NAND2X0_RVT)                          0.01       0.51 r
+  r1311/U23/Y (AO22X1_RVT)                                0.03       0.53 r
+  r1311/U12/Y (AO22X1_RVT)                                0.02       0.55 r
+  r1311/ULTI1_19/Y (NAND2X0_RVT)                          0.01       0.56 f
+  r1311/ULTI2_19/Y (NAND2X0_RVT)                          0.01       0.57 r
+  r1311/U29/Y (AO22X1_RVT)                                0.03       0.60 r
+  r1311/U20/Y (AO22X1_RVT)                                0.02       0.62 r
+  r1311/ULTI1_22/Y (NAND2X0_RVT)                          0.01       0.63 f
+  r1311/ULTI2_22/Y (NAND2X0_RVT)                          0.01       0.64 r
+  r1311/U25/Y (AO22X1_RVT)                                0.03       0.67 r
+  r1311/U13/Y (AO22X1_RVT)                                0.02       0.69 r
+  r1311/ULTI1/Y (NAND2X0_RVT)                             0.01       0.70 f
+  r1311/ULTI2/Y (NAND2X0_RVT)                             0.01       0.71 r
+  r1311/LT (Image_Classifier_DW01_cmp6_27)                0.00       0.71 r
+  U288137/Y (AND3X1_RVT)                                  0.02       0.73 r
+  U288135/Y (NAND4X0_RVT)                                 0.02       0.75 f
+  U288131/Y (NAND2X0_RVT)                                 0.02       0.77 r
+  U305482/Y (INVX1_RVT)                                   0.01       0.78 f
+  U288120/Y (NAND3X0_RVT)                                 0.01       0.79 r
+  U305480/Y (INVX1_RVT)                                   0.01       0.80 f
+  U288097/Y (AO22X1_RVT)                                  0.02       0.82 f
+  Image_Number[1] (out)                                   0.00       0.82 f
+  data arrival time                                                  0.82
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  output external delay                                  -0.60       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -0.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: Wgt_0_784[0]
+              (input port clocked by clk)
+  Endpoint: AB_0/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_add_19
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 r
+  Wgt_0_784[0] (in)                                       0.00       0.60 r
+  AB_0/add_46/B[0] (Image_Classifier_DW01_add_19)         0.00       0.60 r
+  AB_0/add_46/U1/Y (AND2X1_RVT)                           0.02       0.62 r
+  AB_0/add_46/U1_1/CO (FADDX1_RVT)                        0.03       0.65 r
+  AB_0/add_46/U1_2/CO (FADDX1_RVT)                        0.03       0.68 r
+  AB_0/add_46/U1_3/CO (FADDX1_RVT)                        0.03       0.71 r
+  AB_0/add_46/U1_4/CO (FADDX1_RVT)                        0.03       0.74 r
+  AB_0/add_46/U1_5/CO (FADDX1_RVT)                        0.03       0.77 r
+  AB_0/add_46/U1_6/CO (FADDX1_RVT)                        0.03       0.80 r
+  AB_0/add_46/U1_7/CO (FADDX1_RVT)                        0.03       0.83 r
+  AB_0/add_46/U1_8/CO (FADDX1_RVT)                        0.03       0.86 r
+  AB_0/add_46/U1_9/CO (FADDX1_RVT)                        0.03       0.89 r
+  AB_0/add_46/U1_10/CO (FADDX1_RVT)                       0.03       0.93 r
+  AB_0/add_46/U1_11/CO (FADDX1_RVT)                       0.03       0.96 r
+  AB_0/add_46/U1_12/CO (FADDX1_RVT)                       0.03       0.99 r
+  AB_0/add_46/U1_13/CO (FADDX1_RVT)                       0.03       1.02 r
+  AB_0/add_46/U1_14/CO (FADDX1_RVT)                       0.03       1.05 r
+  AB_0/add_46/U1_15/CO (FADDX1_RVT)                       0.03       1.08 r
+  AB_0/add_46/U1_16/CO (FADDX1_RVT)                       0.03       1.11 r
+  AB_0/add_46/U1_17/CO (FADDX1_RVT)                       0.03       1.14 r
+  AB_0/add_46/U1_18/CO (FADDX1_RVT)                       0.03       1.17 r
+  AB_0/add_46/U1_19/CO (FADDX1_RVT)                       0.03       1.20 r
+  AB_0/add_46/U1_20/CO (FADDX1_RVT)                       0.03       1.23 r
+  AB_0/add_46/U1_21/CO (FADDX1_RVT)                       0.03       1.27 r
+  AB_0/add_46/U1_22/CO (FADDX1_RVT)                       0.03       1.30 r
+  AB_0/add_46/U1_23/CO (FADDX1_RVT)                       0.03       1.33 r
+  AB_0/add_46/U1_24/CO (FADDX1_RVT)                       0.03       1.36 r
+  AB_0/add_46/U1_25/S (FADDX1_RVT)                        0.04       1.40 f
+  AB_0/add_46/SUM[25] (Image_Classifier_DW01_add_19)      0.00       1.40 f
+  AB_0/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  AB_0/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       1.90 r
+  library setup time                                     -0.01       1.89
+  data required time                                                 1.89
+  --------------------------------------------------------------------------
+  data required time                                                 1.89
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: Wgt_1_784[0]
+              (input port clocked by clk)
+  Endpoint: AB_1/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   540000                saed32rvt_ff1p16vn40c
+  Image_Classifier_DW01_add_18
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 r
+  Wgt_1_784[0] (in)                                       0.00       0.60 r
+  AB_1/add_46/B[0] (Image_Classifier_DW01_add_18)         0.00       0.60 r
+  AB_1/add_46/U1/Y (AND2X1_RVT)                           0.02       0.62 r
+  AB_1/add_46/U1_1/CO (FADDX1_RVT)                        0.03       0.65 r
+  AB_1/add_46/U1_2/CO (FADDX1_RVT)                        0.03       0.68 r
+  AB_1/add_46/U1_3/CO (FADDX1_RVT)                        0.03       0.71 r
+  AB_1/add_46/U1_4/CO (FADDX1_RVT)                        0.03       0.74 r
+  AB_1/add_46/U1_5/CO (FADDX1_RVT)                        0.03       0.77 r
+  AB_1/add_46/U1_6/CO (FADDX1_RVT)                        0.03       0.80 r
+  AB_1/add_46/U1_7/CO (FADDX1_RVT)                        0.03       0.83 r
+  AB_1/add_46/U1_8/CO (FADDX1_RVT)                        0.03       0.86 r
+  AB_1/add_46/U1_9/CO (FADDX1_RVT)                        0.03       0.89 r
+  AB_1/add_46/U1_10/CO (FADDX1_RVT)                       0.03       0.93 r
+  AB_1/add_46/U1_11/CO (FADDX1_RVT)                       0.03       0.96 r
+  AB_1/add_46/U1_12/CO (FADDX1_RVT)                       0.03       0.99 r
+  AB_1/add_46/U1_13/CO (FADDX1_RVT)                       0.03       1.02 r
+  AB_1/add_46/U1_14/CO (FADDX1_RVT)                       0.03       1.05 r
+  AB_1/add_46/U1_15/CO (FADDX1_RVT)                       0.03       1.08 r
+  AB_1/add_46/U1_16/CO (FADDX1_RVT)                       0.03       1.11 r
+  AB_1/add_46/U1_17/CO (FADDX1_RVT)                       0.03       1.14 r
+  AB_1/add_46/U1_18/CO (FADDX1_RVT)                       0.03       1.17 r
+  AB_1/add_46/U1_19/CO (FADDX1_RVT)                       0.03       1.20 r
+  AB_1/add_46/U1_20/CO (FADDX1_RVT)                       0.03       1.23 r
+  AB_1/add_46/U1_21/CO (FADDX1_RVT)                       0.03       1.27 r
+  AB_1/add_46/U1_22/CO (FADDX1_RVT)                       0.03       1.30 r
+  AB_1/add_46/U1_23/CO (FADDX1_RVT)                       0.03       1.33 r
+  AB_1/add_46/U1_24/CO (FADDX1_RVT)                       0.03       1.36 r
+  AB_1/add_46/U1_25/S (FADDX1_RVT)                        0.04       1.40 f
+  AB_1/add_46/SUM[25] (Image_Classifier_DW01_add_18)      0.00       1.40 f
+  AB_1/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  AB_1/Adder_26b_18f_block.delayForLatency_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       1.90 r
+  library setup time                                     -0.01       1.89
+  data required time                                                 1.89
+  --------------------------------------------------------------------------
+  data required time                                                 1.89
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+1

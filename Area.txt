@@ -1,0 +1,138 @@
+ 
+****************************************
+Report : area
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Wed Dec  9 18:28:06 2020
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                       157008
+Number of nets:                        271031
+Number of cells:                       110012
+Number of combinational cells:          97489
+Number of sequential cells:             12427
+Number of macros:                           0
+Number of buf/inv:                      17189
+Number of references:                     128
+
+Combinational area:       333468.955403
+Buf/Inv area:             37572.396242
+Noncombinational area:    84434.771677
+Net Interconnect area:    271906.249177
+
+Total cell area:          417903.727081
+Total area:               689809.976258
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ------------------------------
+Image_Classifier                  417903.7271    100.0  279016.8247  84434.7717  0.0000  Image_Classifier
+AB_0/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_19
+AB_1/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_18
+AB_2/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_17
+AB_3/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_16
+AB_4/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_15
+AB_5/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_14
+AB_6/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_13
+AB_7/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_12
+AB_8/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_11
+AB_9/add_46                          127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_10
+N_0/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_9
+N_0/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_19
+N_0/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_18
+N_0/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_29
+N_1/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_8
+N_1/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_17
+N_1/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_16
+N_1/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_28
+N_2/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_7
+N_2/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_15
+N_2/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_14
+N_2/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_27
+N_3/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_6
+N_3/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_13
+N_3/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_12
+N_3/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_26
+N_4/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_5
+N_4/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_11
+N_4/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_10
+N_4/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_25
+N_5/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_4
+N_5/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_9
+N_5/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_8
+N_5/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_24
+N_6/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_3
+N_6/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_7
+N_6/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_6
+N_6/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_23
+N_7/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_2
+N_7/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_5
+N_7/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_4
+N_7/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_22
+N_8/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_1
+N_8/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_3
+N_8/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_2
+N_8/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_21
+N_9/Add_0/add_46                     127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_0
+N_9/Mult_0/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_1
+N_9/Mult_1/mult_50                  1721.3173      0.4    1721.3173      0.0000  0.0000  Image_Classifier_DW_mult_tc_0
+N_9/a0/add_13                        127.0720      0.0     127.0720      0.0000  0.0000  Image_Classifier_DW01_add_20
+m1/add_18                             28.7183      0.0      28.7183      0.0000  0.0000  Image_Classifier_DW01_inc_0
+r1294                                305.2269      0.1     305.2269      0.0000  0.0000  Image_Classifier_DW01_cmp6_44
+r1295                                305.2269      0.1     305.2269      0.0000  0.0000  Image_Classifier_DW01_cmp6_43
+r1296                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_42
+r1297                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_41
+r1298                                333.1828      0.1     333.1828      0.0000  0.0000  Image_Classifier_DW01_cmp6_40
+r1299                                329.3706      0.1     329.3706      0.0000  0.0000  Image_Classifier_DW01_cmp6_39
+r1300                                329.3706      0.1     329.3706      0.0000  0.0000  Image_Classifier_DW01_cmp6_38
+r1301                                418.0669      0.1     418.0669      0.0000  0.0000  Image_Classifier_DW01_cmp6_37
+r1302                                418.8293      0.1     418.8293      0.0000  0.0000  Image_Classifier_DW01_cmp6_36
+r1303                                341.8237      0.1     341.8237      0.0000  0.0000  Image_Classifier_DW01_cmp6_35
+r1304                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_34
+r1305                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_33
+r1306                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_32
+r1307                                306.4977      0.1     306.4977      0.0000  0.0000  Image_Classifier_DW01_cmp6_31
+r1308                                333.1828      0.1     333.1828      0.0000  0.0000  Image_Classifier_DW01_cmp6_30
+r1309                                394.6856      0.1     394.6856      0.0000  0.0000  Image_Classifier_DW01_cmp6_29
+r1310                                393.9232      0.1     393.9232      0.0000  0.0000  Image_Classifier_DW01_cmp6_28
+r1311                                369.5254      0.1     369.5254      0.0000  0.0000  Image_Classifier_DW01_cmp6_27
+r1312                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_26
+r1313                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_25
+r1314                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_24
+r1315                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_23
+r1316                                391.8900      0.1     391.8900      0.0000  0.0000  Image_Classifier_DW01_cmp6_22
+r1317                                390.6193      0.1     390.6193      0.0000  0.0000  Image_Classifier_DW01_cmp6_21
+r1318                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_20
+r1319                                385.5364      0.1     385.5364      0.0000  0.0000  Image_Classifier_DW01_cmp6_19
+r1320                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_18
+r1321                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_17
+r1322                                406.1221      0.1     406.1221      0.0000  0.0000  Image_Classifier_DW01_cmp6_16
+r1323                                389.6027      0.1     389.6027      0.0000  0.0000  Image_Classifier_DW01_cmp6_15
+r1324                                334.4535      0.1     334.4535      0.0000  0.0000  Image_Classifier_DW01_cmp6_14
+r1325                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_13
+r1326                                334.4535      0.1     334.4535      0.0000  0.0000  Image_Classifier_DW01_cmp6_12
+r1327                                378.9287      0.1     378.9287      0.0000  0.0000  Image_Classifier_DW01_cmp6_11
+r1328                                376.6414      0.1     376.6414      0.0000  0.0000  Image_Classifier_DW01_cmp6_10
+r1329                                335.7242      0.1     335.7242      0.0000  0.0000  Image_Classifier_DW01_cmp6_9
+r1330                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_8
+r1331                                405.6138      0.1     405.6138      0.0000  0.0000  Image_Classifier_DW01_cmp6_7
+r1332                                404.8514      0.1     404.8514      0.0000  0.0000  Image_Classifier_DW01_cmp6_6
+r1333                                336.9949      0.1     336.9949      0.0000  0.0000  Image_Classifier_DW01_cmp6_5
+r1334                                404.3431      0.1     404.3431      0.0000  0.0000  Image_Classifier_DW01_cmp6_4
+r1335                                402.3099      0.1     402.3099      0.0000  0.0000  Image_Classifier_DW01_cmp6_3
+r1336                                406.8845      0.1     406.8845      0.0000  0.0000  Image_Classifier_DW01_cmp6_2
+r1337                                405.3597      0.1     405.3597      0.0000  0.0000  Image_Classifier_DW01_cmp6_1
+r1338                                405.3597      0.1     405.3597      0.0000  0.0000  Image_Classifier_DW01_cmp6_0
+--------------------------------  -----------  -------  -----------  ----------  ------  ------------------------------
+Total                                                   333468.9554  84434.7717  0.0000
+
+1
